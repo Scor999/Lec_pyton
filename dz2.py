@@ -65,3 +65,12 @@
 # print(numbers)
 # print(datalist)
 # print(get_mult(numbers, datalist))
+
+# Реализуйте алгоритм перемешивания списка.
+
+# stroka= input('Введите список: ')
+# lst=stroka.split(" ")
+# print(lst) 
+# import random
+# random.shuffle(lst)
+# print('->', lst)
