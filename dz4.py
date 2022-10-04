@@ -7,4 +7,3 @@ f=0
 s = str(number)
 f=(abs(s.find('.') - len(s)) - 1)
 print('число Пи с заданной точностью',f,'равно', round(pi, f)
-
