@@ -10,15 +10,25 @@
 
 # Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
 
-num = int(input("Введите натуральное число N: "))
-i = 2 
-lst = []
-old = num
-while i <= num:
-    if num % i == 0:
-        lst.append(i)
-        num //= i
-        i = 2
-    else:
-        i += 1
-print(f"Простые множители числа {old} приведены в списке: {lst}")
+# num = int(input("Введите натуральное число N: "))
+# i = 2 
+# lst = []
+# old = num
+# while i <= num:
+#     if num % i == 0:
+#         lst.append(i)
+#         num //= i
+#         i = 2
+#     else:
+#         i += 1
+# print(f"Простые множители числа {old} приведены в списке: {lst}")
+
+# Задайте последовательность чисел. Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности.
+
+# from random import randint
+# d= int(input('Ввведите диапазон списка: '))
+# lst = [randint(0, 10) for i in range(d)]
+# print(f"Исходный список: {lst}")
+# new_lst = []
+# [new_lst.append(i) for i in lst if i not in new_lst]
+# print(f"Список из неповторяющихся элементов: {new_lst}")
