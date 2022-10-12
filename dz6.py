@@ -106,6 +106,28 @@
 # with open('Polynomial.txt', 'a') as data:
 #     data.write(f"{polynom3}\n")
 
+# Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
+# Пример:- 6782 -> 23 - 0,56 -> 11
 
+# Первое решение
+# def start():
+#     float_num = input('Введите вещественное число: ')
+#     float_num = float_num.replace('-', '', 1)
+#     float_num = float_num.replace('.', '', 1)
+#     float_num = float_num.replace(',', '', 1)
+#     if float_num.isdigit():
+#         res_sum = 0
+#         for i in float_num:
+#             res_sum += int(i)
+#         print("Сумма цифр введенного числа:", res_sum)
+#         exit()
+#     print("Вы ввели не вещественное число попробуйте еще раз!!!")    
+#     start()
+# start()
 
+# Второе решение lambda
 
+from functools import reduce
+float_num = input('Введите вещественное число: ')
+res_sum = reduce(lambda x, y: x + y, [int(i) for i in float_num])
+print("Сумма цифр введенного числа:", res_sum)
